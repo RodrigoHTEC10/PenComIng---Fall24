@@ -12,53 +12,54 @@ El presente proyecto busca automatizar esta rutina generando una lista de desayu
 ## **Algoritmo del Programa**
 
 -	**Entradas**
-	- Orden para generar una nueva semana de comidas "Si" o "No" `palabra` (Texto String)
+	- Orden para generar una nueva semana de comidas "Si" o "No" (Texto String)
 	- Número de dias a planear. (Número Entero)
 	
 -	**Proceso**
-1. Pedir orden para generar semana de comidas: `palabra`. Ejemplo "Si" o "No".
-2. Si recibe "Si" comienza el proceso.
+1. Creación de la variabe String `palabra`
+2. Pedir orden para generar semana de comidas: `palabra`. Ejemplo "Si" o "No".
+3. Si `palabra` es igual a "Si" comienza el proceso.
 
-	2.1. Pedir número de días a planear. Ejemplo "4".
+	3.1. Pedir número de días a planear. Ejemplo "4".
 
-   		2.1.1. Creación de la variable número entero:  `num_dias`
+   		3.1.1. Creación de la variable número entero:  `num_dias`
    
-	2.2. Obtención de recetas: `num_dias` de Desayunos.
+	3.2. Obtención de recetas: `num_dias` de Desayunos.
 
-	 	 2.2.1. Uso de la función `obten_random` la cual sortea las listas y obtiene `num_dias`  de recetas sin repetir.
+	 	 3.2.1. Uso de la función `obten_random` la cual sortea las listas y obtiene `num_dias`  de recetas sin repetir.
 
-	2.3. Obtención de recetas: `num_dias` de Comidas.
+	3.3. Obtención de recetas: `num_dias` de Comidas.
 
-   		2.3.1. Uso de la función `obten_random` en base a  `num_dias`
+   		3.3.1. Uso de la función `obten_random` en base a  `num_dias`
 
-	2.4. Obtención de recetas: `num_dias` de Cenas.
+	3.4. Obtención de recetas: `num_dias` de Cenas.
     
-	  	2.4.1. Uso de la función `obten_random` en base a  `num_dias`
+	  	3.4.1. Uso de la función `obten_random` en base a  `num_dias`
 
-   	2.5 Llamar los ingredientes de cada receta a través de una función.
+   	3.5 Llamar los ingredientes de cada receta a través de una función.
    
-	2.6. Colección de ingredientes de cada receta en una lista expansible.
+	3.6. Colección de ingredientes de cada receta en una lista expansible.
    
-	2.7. Al encontrarse el mismo nombre de ingrediente su cantidad aumenta más no se agrega de nuevo a la lista.
+	3.7. Al encontrarse el mismo nombre de ingrediente su cantidad aumenta más no se agrega de nuevo a la lista.
    
-	2.8. Creación del archivo de texto.
+	3.8. Creación del archivo de texto.
    
-	2.9. Colocar toda la información dentro del archivo de texto.
+	3.9. Colocar toda la información dentro del archivo de texto.
 
-	  	2.9.1. Colocar recetas Desayuno dentro del archivo de texto.
+	  	3.9.1. Colocar recetas Desayuno dentro del archivo de texto.
 
-	  	2.9.2. Colocar recetas Comida dentro del archivo de texto.
+	  	3.9.2. Colocar recetas Comida dentro del archivo de texto.
 
-	  	2.9.3. Colocar recetas Cena dentro del archivo de texto.
+	  	3.9.3. Colocar recetas Cena dentro del archivo de texto.
 
-	  	2.9.4. Colocar lista de Ingredientes justo a sus cantidades.
+	  	3.9.4. Colocar lista de Ingredientes justo a sus cantidades.
 
     
-	2.10. Guardar archivo de texto.
+	3.10. Guardar archivo de texto.
    
-	2.11. Exportar archivo de texto al usuario.
+	3.11. Exportar archivo de texto al usuario.
    
-   	2.12. Finalizar el programa.
+   	3.12. Finalizar el programa.
    
 4. Si no, finalizar el programa
 -	**Salidas**
