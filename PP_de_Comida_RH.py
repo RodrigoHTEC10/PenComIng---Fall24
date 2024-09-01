@@ -338,7 +338,8 @@ def print_menu(meal_list1, meal_list2, meal_list3,num_days):
 #Function print_list (shop_list) Prints the shopping list in a stylish format.
 def print_list(list):
     for k,v in list.items():
-        print(f"[ ] {k}: {v}")
+        if k!=""and v!=0:
+            print(f"[ ] {k}: {v}")
 
 
 
@@ -348,7 +349,7 @@ def print_list(list):
 #Introduccion and input from the user to start the program.
 print("Welcome to the Meal Planner and Shopping List Generator.\nWould you like to get the meals of this week?")
 order = input("Please answer \"Yes\" or \"No\": ")
-if order == "Yes":
+if order == "Yes" or "yes":
     #Input of number of days to call the functions get meal from each category.
     num_days = int(input("Please enter the number of days you would like to receive a Meal Plan: "))
     meals_b =get_meal(BREAKFAST,num_days)
