@@ -104,6 +104,11 @@ def main():
     }
 
 
+
+
+
+
+
                                                             #Entrees
         #Entrees Recipes
     red_rice = {
@@ -229,6 +234,9 @@ def main():
 
 
 
+
+
+
                                                             #Lunches
         #Lunches Recipes
     hamburger = {
@@ -348,6 +356,9 @@ def main():
 
 
 
+
+
+
                                                                 #Dinners
         #Dinner Recipes
     molletes = {
@@ -397,6 +408,11 @@ def main():
         "Nopales with hat": nopales_sombrero,
     }
 
+
+
+
+
+
                                                                 #Desserts
 
 
@@ -420,6 +436,11 @@ def main():
         "Rice with milk":rice_milk,
         "Jello gelatine":jello,
     }
+
+
+
+
+
 
                                                                 #Calories
     calories = {
@@ -463,6 +484,9 @@ def main():
 
 
 
+
+
+
     """
                                                                     Functions
     """ 
@@ -474,11 +498,13 @@ def main():
             counter+=1
         
         if num_days<= counter:    
-            meal_list = random.sample(list(meal_type),num_days)
+            meal_list = random.sample(list(meal_type),num_days)             #Cast typing of the dictionary meal_type into a list to work in the random.sample()
         else:
-            meal_list = random.choices(list(meal_type), k=num_days)
+            meal_list = random.choices(list(meal_type), k=num_days)         #Cast typing of the dictionary meal_type into a list to work in the random.sample()
 
         return meal_list
+
+
 
 
 
@@ -585,6 +611,8 @@ def main():
 
 
 
+
+
     #Función calories_count (meal_list1, meal_list2, meal_list3). Looks for the recipes calories in the calories dictionary and gives a weekly addition of them.
     def calories_count(meal_list1, meal_list2, meal_list3,meal_list4,meal_list5):
         calories_total = 0.0
@@ -642,17 +670,22 @@ def main():
 
 
 
+
+
+
     #Function save_list (shop_list) Saves the shopping list in a stylish format and returns it as a String.
     def save_list(list):
-        new_list = []
+        new_list = []                                                       #Creation of a list
         lista = ""
         for k,v in list.items():
             if k!=""and v!=0:                                               #if
-                new_list.append(f"[ ] {k}: {v}\n")
+                new_list.append(f"[ ] {k}: {v}\n")                          #Saving the ingredients from the dictionary list to the list new_list
         sorted_list = sorted(new_list)
         for x in sorted_list:
             lista=lista +x
         return lista
+
+
 
 
 
@@ -682,22 +715,44 @@ def main():
         menu = save_menu(meals_b,meals_e,meals_l,meals_d,meals_dd,num_days)
         
         result =f" El menu es {menu}\n The shopping list of this meal collection is:\n{listed}\n The total calories of this meal collection are: {menu_total_cal}\nThank you for using the program. Have a good day."
-        
+
+
+
 
 
     else:                                                                   #else
         result ="Thank you for using the program. Have a good day."
         
     return result
-    
+
+
+
+
+
+
+
+"""
+                                                            Use of the main() function
+"""
 
 printing_text = main()
 print(printing_text)
 
-#File creation and Experimentation
+
+
+
+
+"""
+                                                            File creation and Experimentation
+"""
+
 file01=open("recipes.txt","wt")
 file01.write(str(printing_text))
 file01.close()
+
+
+
+
 
 
 """
