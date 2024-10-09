@@ -13,222 +13,285 @@ def main():
                                                             Data storing
     """
                                                             #Breakfasts
-        #Breakfast Recipes
-    #Each recipe will be a dictionary
-    eggs_ham = {
-        
+
+
+    # All recipes are collected on a dictionary, in this particular case Breakfast
+    breakfast = {
+        "Eggs with ham" : 
+        {
+
         "Eggs":2,
         "Ham slides" : 2,
         "": 0,
-    }
 
-    eggs_spinach = {
-        
+        },
+
+        "Eggs with spinach" : 
+        {
+
         "Eggs": 2,
-        "Spinach" : 100,
+        "Spinach (gr)" : 100,
         "": 0,
-    }
 
-    hotcakes = {
-        
-        "Eggs": 2,
-        "Milk (ml)": 350,
-        "Hot cake mix": 2,
-        "Butter (gr)": 30,
+        },
+
+        "Hotcakes": 
+        {
+
+        "Eggs": 1,
+        "Milk (ml)": 175,
+        "Hot cake mix cup": 1,
+        "Butter (gr)": 15,
         "Maple syrup (ml)": 100,
         "": 0,
-    }
 
-    eggs_bacon ={
+        },
+
+        "Eggs with bacon": 
+        {
+
         "Eggs":2,
         "Bacon strips": 2,
         "": 0,
-    }
 
-    chicken_raft = {
-        
+        },
+
+        "Chicken on a raft": 
+        {
+
         "Eggs": 2,
         "Slice of bread":2,
         "Avocado": 1,
         "": 0,
-    }
 
-    eggs_tortilla = {
-        "Eggs": 2,
-        "Tortillas (gr)": 50,
-        "Oil (ml)": 10,
-        "Salt (gr)": 0.2,
-        "":0,
-    }
+        },
 
-    french_toast = {
-        
+        "French toast": 
+        {
+
         "Eggs":2,
         "Slice of bread":2,
         "Cinnamon ground":1,
         "Maple syrup (ml)": 100,
         "Butter (gr)": 30,
-        "": 0,
-        
-    }
+        "": 0,    
 
-    breakfast_tacos = {
-        "Eggs": 3,
+        },
+
+        "Eggs with tortilla": 
+        {
+
+        "Eggs": 2,
+        "Tortillas (gr)": 50,
+        "Oil (ml)": 10,
+        "Salt (gr)": 0.2,
+        "":0,
+
+        },
+
+        "Breakfast tacos":
+        {
+
+        "Eggs": 1,
         "Milk (ml)": 175,
-        "Hot cake mix": 1,
+        "Hot cake mix cup": 1,
         "Butter (gr)": 15,
         "Maple syrup (ml)": 100,
         "Ham slides":2,
         "": 0,
-    }
 
-    eggs_potatoes = {
+        },
+
+        "Eggs with potatoes":
+        {
+
         "Eggs":2,
         "Potatoes (gr)":80,
         "Oil (ml)": 20,
         "": 0,
+
+        },
+
+        "Eggs with sausage":
+        {
+        
+        "Eggs":2,
+        "Sausage": 1,
+        "": 0,
+
+        },
+
+        "Eggs with beans":
+        {
+        
+        "Eggs":2,
+        "Can of beans": 0.25,
+
+        }
+
+
     }
 
 
-    # All recipes are collected on a dictionary, in this particular case Breakfast
-    BREAKFAST = {
-        "Eggs with ham" : eggs_ham,
-        "Eggs with spinach" : eggs_spinach,
-        "Hotcakes": hotcakes,
-        "Eggs with bacon": eggs_bacon,
-        "Chicken on a raft": chicken_raft,
-        "French toast": french_toast,
-        "Eggs with tortilla": eggs_tortilla,
-        "Breakfast tacos":breakfast_tacos,
-        "Eggs with potatoes":eggs_potatoes,
-    }
 
 
+                                                #Entrees
 
+    entree = {
+        "Red rice":{
 
-
-
-
-                                                            #Entrees
-        #Entrees Recipes
-    red_rice = {
-        "Rice (gr)": 300,
-        "Tomato":2,
+        "Rice (gr)": 150,
+        "Tomato":1,
         "Onion": 0.25,
+        "Garlic clove":0.25,
+        "Oil (ml)": 12.5,
+        "Water (ml)": 200,
+        "":0,
+
+        },
+
+        "White rice":
+        {
+
+        "Rice (gr)": 150,
+        "Peas (gr)": 375,
         "Garlic clove":1,
-        "Oil (ml)": 50,
-        "Water (ml)": 400,
+        "Oil (ml)": 25,
+        "Water (ml)": 200,
         "":0,
 
-    }
+        },
 
-    white_rice={
-        "Rice (gr)": 300,
-        "Peas (gr)": 750,
-        "Garlic clove":2,
-        "Oil (ml)": 50,
-        "Water (ml)": 400,
+        "White spaguetti":
+        {
+
+        "Pasta package":0.5,
+        "Sour cream (ml)": 75,
+        "Fin herbs (gr)":10,
+        "Salt (gr)": 5,
+        "Butter (gr)": 15,
+        "Cheese (gr)": 75,
         "":0,
 
-    }
+        },
 
-    white_spaguetti ={
-        "Pasta package":1,
-        "Sour cream (ml)": 150,
-        "Fin herbs (gr)":20,
-        "Salt (gr)": 10,
-        "Butter (gr)": 30,
-        "Cheese (gr)": 150,
+        "Mac & Cheese":
+        {
+
+        "Mac & Cheese package":0.25,
+        "Water (ml)": 360,
+        "Milk (ml)": 15,
+        "Butter (gr)": 15,
         "":0,
 
-    }
+        },
 
-    mac_cheese ={
-        "Mac & Cheese package":1,
-        "Water (ml)": 1440,
-        "Milk (ml)": 60,
-        "Butter (gr)": 60,
-        "":0,
+        "Apple sweet salad":
+        {
 
-    }
-
-    salad_sweet_apple = {
         "Apple":1,
         "Lettuce (gr)": 250,
-        "Pecans (gr)":50,
-        "Cranberries (gr)": 50,
-        "Sunflower seeds (gr)":40,
+        "Pecans (gr)":25,
+        "Cranberries (gr)": 25,
+        "Sunflower seeds (gr)":20,
         "Jicama (gr)":100,
         "":0,
 
-    }
+        },
 
-    chicken_rice_salad = {
-        "Chicken breast (gr)": 1500,
+        "Chicken and Rice salad":
+        {
+
+        "Chicken breast (gr)": 500,
         "Onion":0.125,
         "Garlic clove":1,
         "Salt (gr)": 10,
-        "Rice (gr)":250,
-        "Pinapple can 500 gr": 1,
-        "Banana":2,
-        "Olive oil (ml)":15,
-        "Salt (gr)": 15,
-        "Mint leaf":5,
+        "Rice (gr)":50,
+        "Pinapple can 500 gr": 0.25,
+        "Banana":0.75,
+        "Olive oil (ml)":5,
+        "Salt (gr)": 5,
+        "Mint leaf":2,
         "":0,
 
-    }
+        },
 
-    potatoes_salad = {
-        "Potatoes (gr)": 400,
-        "Peas (gr)": 500,
-        "Mayonaisse (gr)" : 100,
+        "Potatoes salad":
+        {
+
+        "Potatoes (gr)": 200,
+        "Peas (gr)": 250,
+        "Mayonaisse (gr)" : 50,
         "":0,
 
-    }
+        },
 
-    vegetables_broth = {
+        "Vegetable's broth":
+        {
+
         "Carrot": 2,
         "Celery stick":1,
         "Onion": 1,
         "Leek":1,
         "Parlsey sprig":1,
-        "Water (ml)":2000,
-        "":0,
-
-    }
-
-    mashed_carrots = {
-        "Carrot": 8,
-        "Butter (gr)": 50,
-        "Eggs":2,
-        "Sour cream (ml)": 60,
-        "Salt (gr)": 20,
         "Water (ml)":1000,
         "":0,
 
-    }
+        },
 
-    lettuce_cream={
-        "Lettuce (gr)": 750,
-        "Butter (gr)": 40,
-        "Milk (ml)":500,
-        "Potatoes (gr)": 100,
-        "Salt (gr)": 20,
+        "Mashed carrots":
+        {
+
+        "Carrot": 4,
+        "Butter (gr)": 25,
+        "Eggs":1,
+        "Sour cream (ml)": 30,
+        "Salt (gr)": 10,
+        "Water (ml)":500,
         "":0,
 
-    }
+        },
 
-    ENTREE = {
-        "Red rice":red_rice,
-        "White rice":white_rice,
-        "White spaguetti":white_spaguetti,
-        "Mac & Cheese": mac_cheese,
-        "Apple sweet salad": salad_sweet_apple,
-        "Chicken and Rice salad":chicken_rice_salad,
-        "Potatoes salad":potatoes_salad,
-        "Vegetable's broth":vegetables_broth,
-        "Mashed carrots":mashed_carrots,
-        "Lettuce cream": lettuce_cream,
+        "Lettuce cream": 
+        {
+
+        "Lettuce (gr)": 325,
+        "Butter (gr)": 20,
+        "Milk (ml)":250,
+        "Potatoes (gr)": 50,
+        "Salt (gr)": 10,
+        "":0,
+
+        },
+
+        "Vegetable's soup":
+        {
+        
+        "Small frozen vegetables package":0.5,
+        "Tomato" : 1,
+        "Onion": 0.125,
+        "Garlic clove":0.5,
+        "Water (ml)":250,
+        "Salt (gr)": 15,
+
+        },
+
+        "Grilled asparagus":
+        {
+        
+        "Asparagus (gr)":200,
+        "Butter (gr)": 25,
+        "Salt (gr)": 20,
+
+        },
+
+        "Grilled Nopales":
+        {
+        
+        "Nopales": 2,
+        "Salt (gr)": 20,
+
+        }
 
     }
 
@@ -239,48 +302,58 @@ def main():
 
                                                             #Lunches
         #Lunches Recipes
-    hamburger = {
-        
+
+    lunch = {
+        "Hamburger": 
+        {
+
         "Burger patty":1,
         "Burger bun": 1,
         "Tomato" : 1,
-        "American cheese":1,
+        "American cheese slices":1,
         "Ketchup (gr)": 100,
         "Mayonaisse (gr)" : 50,
         "Mustard (gr)" : 50,
         "": 0,
-        
-    }
 
-    steak_veggy = {
-        
+        },
+
+        "Steak with vegetables": 
+        {
+
         "Beef steak": 2,
-        "Carrot": 2,
-        "Zuccini": 2,
-        "Oil (ml)": 50,
+        "Carrot": 1,
+        "Zuccini": 1,
+        "Oil (ml)": 25,
         "Salt (gr)": 5,
         "": 0,
-    }
 
-    steak_onion = {
-        
+        },
+
+        "Steak with onion": 
+        {
+
         "Beef steak": 2,
         "Onion": 1,
         "": 0,
-    }
 
-    papas_chorizo = {
-        
+        },
+
+        "Potatoes with chorizo": 
+        {
+
         "Potatoes (gr)": 300,
         "Chorizo (gr)": 250,
         "Sour cream (ml)": 100,
         "Cheese (gr)": 150,
         "Bolillo": 1,
         "": 0,
-    }
 
-    hotdogs = {
-        
+        },
+
+        "Hotdogs" : 
+        {
+
         "Hotdog buns":2,
         "Sausage": 2,
         "Bacon strips": 2,
@@ -288,46 +361,52 @@ def main():
         "Mayonaisse (gr)" : 50,
         "Mustard (gr)" : 50,
         "": 0,
-        
-    }
 
-    tortitas_tuna = {
+        },
+
+        "Little tuna tortas": 
+        {
+
         "Eggs":2,
         "Can of tuna": 2,
         "Potatoes (gr)":250,
         "":0,
 
+        },
 
-    }
-
-    enchilada_verde = {
+        "Green enchiladas":
+        {
 
         "Tortillas (gr)":100,
-        "Chicken breast (gr)": 700,
-        "Sour cream (ml)": 150,
-        "Cheese (gr)": 250,
-        "Onion": 0.5,
-        "Tomatillos": 10,
-        "Garlic clove":1,
-        "Green chile":1,
-        "Cilantro (gr)": 50,
-        "Oil (ml)": 50,
-        "Salt (gr)": 50,
-        "Baking soda (gr)": 20, 
+        "Chicken breast (gr)": 350,
+        "Sour cream (ml)": 75,
+        "Cheese (gr)": 125,
+        "Onion": 0.25,
+        "Tomatillos": 5,
+        "Garlic clove":0.5,
+        "Green chile":0.5,
+        "Cilantro (gr)": 25,
+        "Oil (ml)": 25,
+        "Salt (gr)": 25,
+        "Baking soda (gr)": 10, 
         "":0,
 
-    }
+        },
 
-    tuna_vegetables = {
+        "Tuna with vegetables":
+        {
+
         "Can of tuna": 2,
         "Can of vegetables":1,
         "Saladitas crackets package": 0.5,
         "Mayonaisse (gr)" : 50,
         "":0,
 
-    }
+        },
 
-    consome = {
+        "Consome":
+        {
+
         "Water (ml)":1500,
         "Beef meat (gr)":200,
         "Leek":1,
@@ -337,20 +416,30 @@ def main():
         "Bread crust": 1,
         "":0,
 
+        },
 
-    }
+        "Grilled chicken":
+        {
+        
+        "Chicken breast (gr)": 200,
+        "Oil (ml)": 25,
+        "Seasoning sheet":2,
 
+        },
 
-    LUNCH = {
-        "Hamburger": hamburger,
-        "Steak with vegetables": steak_veggy,
-        "Steak with onion": steak_onion,
-        "Potatoes with chorizo": papas_chorizo,
-        "Hotdogs" : hotdogs,
-        "Little tuna tortas": tortitas_tuna,
-        "Green enchiladas":enchilada_verde,
-        "Tuna with vegetables":tuna_vegetables,
-        "Consome":consome,
+        "Chicharron and Guacamole tacos":
+        {
+
+        "Chicharron (gr)":150,
+        "Avocado": 1,
+        "Tomato" : 0.25,
+        "Onion": 0.25,
+        "Garlic":0.125,
+        "Lime":1,
+        "Salt (gr)": 50,
+        "Tortillas (gr)":80,
+
+        },
 
     }
 
@@ -361,51 +450,78 @@ def main():
 
                                                                 #Dinners
         #Dinner Recipes
-    molletes = {
-        "Cheese (gr)": 200,
-        "Bolillo":1,
-        "Can of beans": 1,
-        "": 0,
-    }
 
-    quesadillas = {
+
+    dinner = {
+        "Molletes": 
+        {
+
+        "Cheese (gr)": 300,
+        "Bolillo":2,
+        "Can of beans": 0.5,
+        "": 0,
+
+        },
+
+        "Quesadillas": 
+        {
+
         "Cheese (gr)": 300,
         "Flour tortillas": 3,
         "": 0,
-    }
 
-    cereal = {
-    
+        },
+
+        "Cereal": 
+        {
+
         "Milk (ml)": 250,
         "Cereal (gr)": 60,
         "": 0,
-    }
 
-    frijoles_chorizo = {
-    
-        "Chorizo (gr)" : 250,
-        "Can of beans" : 1,
+        },
+
+        "Beans with chorizo": 
+        {
+
+        "Chorizo (gr)" : 125,
+        "Can of beans" : 0.5,
         "": 0,
-    }
 
-    nopales_sombrero = {
+        },
+
+        "Nopales with hat": 
+        {
+
         "Cheese (gr)": 150,
         "Nopales": 2,
         "Chorizo (gr)" : 250,
         "Can of beans" : 1,
         "Lechuga (gr)": 100,
         "": 0,
-    }
 
+        },
 
+        "Homemade Pizza":
+        {
+        
+        "Flour tortillas": 2,
+        "Pizza sauce (ml)": 100,
+        "Cheese (gr)": 300,
+        "Pepperoni slices": 10,
 
+        },
 
-    DINNER = {
-        "Molletes": molletes,
-        "Quesadillas": quesadillas,
-        "Cereal": cereal,
-        "Beans with chorizo": frijoles_chorizo,
-        "Nopales with hat": nopales_sombrero,
+        "Sincronizadas": 
+        {
+
+        "Cheese (gr)": 200,
+        "Flour tortillas": 4,
+        "Ham slides" : 2,
+        "American cheese slices":2,
+        "": 0,
+
+        },
     }
 
 
@@ -416,71 +532,74 @@ def main():
                                                                 #Desserts
 
 
-    rice_milk = {
+
+    dessert={
+        "Rice with milk":
+        {
+
         "Rice (gr)": 120,
         "Cinnamon bars":0.5,
         "Water (ml)": 360,
         "Carnation can":0.25,
         "Lechera can":0.25,
         "":0,
-    }
 
-    jello ={
+        },
+
+        "Jello gelatine":
+        {
+
         "Jello box":0.25,
         "Water (ml)":250,
         "":0,
 
+        },
+
+        "Peanut butter cookies":
+        {
+        
+        "Peanut butter (gr)": 60,
+        "Sugar (gr)":60,
+        "Chocolate chips (gr)":30,
+        "Eggs": 0.25,
+        "Baking soda (gr)":5,
+        "":0,
+
+        },
+
+        "Cake slice":
+        {
+
+        "Cake":0.125,
+        "":0,
+
+        },
+
+        "Sweet bread":
+        {
+        
+        "Sweet bread (personal choice)":1,
+        "":0,
+
+        },
+
+        "Skip Dessert":
+        {
+        
+        "":0,
+
+        },
     }
-
-    DESSERT={
-        "Rice with milk":rice_milk,
-        "Jello gelatine":jello,
-    }
-
-
-
 
 
 
                                                                 #Calories
-    calories = {
-        "Eggs with ham": 291,
-        "Eggs with spinach": 212,
-        "Hotcakes": 531,
-        "Eggs with bacon": 186,
-        "Hamburger": 330,
-        "Steak with vegetables": 258,
-        "Steak with onion": 198,
-        "Molletes": 510,
-        "Quesadillas": 693,
-        "Potatoes with chorizo": 302,
-        "Cereal": 420,
-        "Beans with chorizo":334,
-        "Nopales with hat": 378,
-        "Chicken on a raft": 210,
-        "Hotdogs" : 468,
-        "French toast": 356,
-        "Little tuna tortas":592,
-        "Eggs with tortilla":395,
-        "Breakfast tacos": 930,
-        "Green enchiladas": 1018,
-        "Eggs with potatoes":378,
-        "Tuna with vegetables":115,
-        "Red rice":724,
-        "White rice":260,
-        "White spaguetti":394,
-        "Mac & Cheese": 390,
-        "Apple sweet salad": 245,
-        "Rice with milk":555,
-        "Jello gelatine":80,
-        "Chicken and Rice salad":220,
-        "Potatoes salad":360,
-        "Vegetable's broth":20,
-        "Mashed carrots":125,
-        "Lettuce cream":45,
-        "Consome":576,
 
-    }
+    calories= [
+        ["Eggs with ham","Eggs with spinach","Hotcakes","Eggs with bacon","Hamburger","Steak with vegetables","Steak with onion","Molletes","Quesadillas","Potatoes with chorizo","Cereal","Beans with chorizo","Nopales with hat","Chicken on a raft","Hotdogs","French toast","Little tuna tortas","Eggs with tortilla","Breakfast tacos","Green enchiladas","Eggs with potatoes","Tuna with vegetables","Red rice","White rice","White spaguetti","Mac & Cheese","Apple sweet salad","Rice with milk","Jello gelatine","Chicken and Rice salad","Potatoes salad","Vegetable's broth","Mashed carrots","Lettuce cream","Consome","Eggs with sausage","Eggs with beans","Vegetable's soup","Grilled asparagus","Grilled Nopales","Grilled chicken","Chicharron and Guacamole tacos","Homemade Pizza","Sincronizadas","Peanut butter cookies","Cake slice","Sweet bread","Skip Dessert",],
+        [291,212,531,186,330,258,198,510,693,302,420,334,378,210,468,356,592,395,930,1018,378,115,724,260,394,390,245,555,80,220,360,20,125,45,576,395,486,250,180,30,110,820,300,784,480,400,300,0]
+    ]
+
 
 
 
@@ -617,24 +736,29 @@ def main():
     def calories_count(meal_list1, meal_list2, meal_list3,meal_list4,meal_list5):
         calories_total = 0.0
         for x in meal_list1:
-            if x in calories.keys():                                        #if
-                calories_total += calories.get(x)                           #Math Operation (Addition)
+            for i in range(len(calories[0])-1):
+                if calories[0][i] == x:                                        #if
+                    calories_total += calories[1][i]                           #Math Operation (Addition)
         
         for x in meal_list2:
-            if x in calories.keys():                                        #if
-                calories_total += calories.get(x)                           #Math Operation (Addition)
+            for i in range(len(calories[0])-1):
+                if calories[0][i] == x:                                        #if
+                    calories_total += calories[1][i] 
 
         for x in meal_list3:
-            if x in calories.keys():                                        #if
-                calories_total += calories.get(x)                           #Math Operation (Addition)
+            for i in range(len(calories[0])-1):
+                if calories[0][i] == x:                                        #if
+                    calories_total += calories[1][i]                           #Math Operation (Addition)
 
         for x in meal_list4:
-            if x in calories.keys():                                        #if
-                calories_total += calories.get(x)                           #Math Operation (Addition)
+            for i in range(len(calories[0])-1):
+                if calories[0][i] == x:                                        #if
+                    calories_total += calories[1][i]                           #Math Operation (Addition)
 
         for x in meal_list5:
-            if x in calories.keys():                                        #if
-                calories_total += calories.get(x)                           #Math Operation (Addition)
+            for i in range(len(calories[0])-1):
+                if calories[0][i] == x:                                        #if
+                    calories_total += calories[1][i]                            #Math Operation (Addition)
 
         return calories_total
 
@@ -650,22 +774,24 @@ def main():
             calories_day = 0.0
             menu = menu + f"Day {x}\n    Breakfast:  {meal_list1[x-1]}\n    Entree:     {meal_list2[x-1]}\n    Lunch:      {meal_list3[x-1]}\n    Dinner:     {meal_list4[x-1]}\n    Dessert:    {meal_list5[x-1]}\n"
 
-            if meal_list1[x-1] in calories.keys():                          #if
-                calories_day += calories.get(meal_list1[x-1])               #Math Operation (Addition)
+            for i in range(len(calories[0])-1):
+                if meal_list1[x-1] == calories[0][i]:                                                                
+                        calories_day += calories[1][i]
 
-            if meal_list2[x-1] in calories.keys():                          #if
-                calories_day += calories.get(meal_list2[x-1])               #Math Operation (Addition)
+                if meal_list2[x-1] == calories[0][i]:                                                                
+                        calories_day += calories[1][i]
 
-            if meal_list3[x-1] in calories.keys():                          #if
-                calories_day += calories.get(meal_list3[x-1])               #Math Operation (Addition)
+                if meal_list3[x-1] == calories[0][i]:                                                                
+                        calories_day += calories[1][i]
 
-            if meal_list4[x-1] in calories.keys():                          #if
-                calories_day += calories.get(meal_list4[x-1])               #Math Operation (Addition)
+                if meal_list4[x-1] == calories[0][i]:                                                                
+                        calories_day += calories[1][i]
 
-            if meal_list5[x-1] in calories.keys():                          #if
-                calories_day += calories.get(meal_list4[x-1])               #Math Operation (Addition)
+                if meal_list5[x-1] == calories[0][i]:                                                                
+                        calories_day += calories[1][i]       
 
-            menu= menu+ f"    Calories of the day: {calories_day}\n    \n"
+
+            menu= menu+ f"    Calories of the day per person: {calories_day}\n    \n"
         return menu
 
 
@@ -674,12 +800,16 @@ def main():
 
 
     #Function save_list (shop_list) Saves the shopping list in a stylish format and returns it as a String.
-    def save_list(list):
+    def save_list(list,num,days):
         new_list = []                                                       #Creation of a list
         lista = ""
         for k,v in list.items():
-            if k!=""and v!=0:                                               #if
-                new_list.append(f"[ ] {k}: {v}\n")                          #Saving the ingredients from the dictionary list to the list new_list
+            if k!=""and v!=0:
+                if k == "Water (ml)":
+                    new_list.append(f"[ ] {k}: {v*num+(2000*days*num)}\n")                                               #if
+                else:
+                    new_list.append(f"[ ] {k}: {v*num}\n")                         #Saving the ingredients from the dictionary list to the list new_list
+
         sorted_list = sorted(new_list)
         for x in sorted_list:
             lista=lista +x
@@ -696,25 +826,27 @@ def main():
     #Introduccion and input from the user to start the program.
     print("Welcome to the Meal Planner and Shopping List Generator.\nWould you like to get the meals of this week?")
     order = str(input("Please answer \"Yes\" or \"No\": "))
+    order = order.lower()
 
-    if order == "Yes":                                             #if
+    if order == "yes":                                          #if
         #Input of number of days to call the functions get meal from each category.
         num_days = int(input("Please enter the number of days you would like to receive a Meal Plan: "))
+        portions = int(input("Please enter the number of people you will cook to during the week (Please count youself): "))
 
-        meals_b =get_meal(BREAKFAST,num_days)
-        meals_e =get_meal(ENTREE, num_days)
-        meals_l =get_meal(LUNCH,num_days)
-        meals_d =get_meal(DINNER,num_days)
-        meals_dd=get_meal(DESSERT,num_days)
+        meals_b =get_meal(breakfast,num_days)
+        meals_e =get_meal(entree, num_days)
+        meals_l =get_meal(lunch,num_days)
+        meals_d =get_meal(dinner,num_days)
+        meals_dd=get_meal(dessert,num_days)
 
         menu_total_cal = calories_count(meals_b,meals_e,meals_l,meals_d,meals_dd)
 
-        shoppy = get_ingredients(BREAKFAST, meals_b,ENTREE, meals_e,LUNCH,meals_l,DINNER,meals_d,DESSERT,meals_dd)
+        shoppy = get_ingredients(breakfast, meals_b,entree, meals_e,lunch,meals_l,dinner,meals_d,dessert,meals_dd)
         
-        listed = save_list(shoppy)
+        listed = save_list(shoppy,portions,num_days)
         menu = save_menu(meals_b,meals_e,meals_l,meals_d,meals_dd,num_days)
         
-        result =f" El menu es {menu}\n The shopping list of this meal collection is:\n{listed}\n The total calories of this meal collection are: {menu_total_cal}\nThank you for using the program. Have a good day."
+        result =f" El menu es {menu}\n The shopping list of this meal collection is:\n{listed}\nThe total calories of this meal collection per person are: {menu_total_cal}\nNote: The program has added two liters of water for each person everyday\nThank you for using the program. Have a good day."
 
 
 
