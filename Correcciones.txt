@@ -1,0 +1,20 @@
+Correcciones al proyecto.
+
+Secciones a corregir:
+  Componente: plantea una situación problema que le permite aplicar y demostrar sus conocimientos de programación (avance 1) = 0
+
+Retroalimentación:
+
+  [¿Podrías agregar un ejemplo de qué es “Orden para generar una nueva semana de comidas”? Me queda claro que es un string pero no qué puede contener.
+  El algoritmo en general se ve bien y claro. Solo me queda duda sobre el paso 15, parece ser el SINO de un “SI” que no me queda claro dónde empieza,
+  sospecho que es el del paso 2 que debió plantearse como un “SI” y anidarse los pasos que dependen de esa condición.
+  Si la orden para empezar solo puede ser “Nueva” sugeriría que fuera entonces un booleano que indique si se quiere generar una  nueva lista o no.]
+
+Correcciones:
+  Las correcciones a dicho componente pueden verse implementadas en el README.md en los commit:
+    Corrección README No. 2 .md
+    Corrección README.md
+    Ambos creados el 23 de Agosto del 2024
+
+Muchas gracias por su tiempo y atención.
+Atentamente, Rodrigo Hurtado
